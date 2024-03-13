@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface ItemsSaver {
 
-    public void saveItems(List<Item> items);
+    void saveItems(List<Item> items);
 
 }
