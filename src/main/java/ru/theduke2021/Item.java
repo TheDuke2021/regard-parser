@@ -1,6 +1,5 @@
 package ru.theduke2021;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -8,9 +7,9 @@ import java.util.Map;
  */
 public class Item {
 
-    private String title;
-    private String imageUrl;
-    private Long price;
+    private final String title;
+    private final String imageUrl;
+    private final String price;
     /**
      * Список с произвольным количеством характеристик товара.
      * У товаров из разных категорий будут разные характеристики.
@@ -18,14 +17,20 @@ public class Item {
      */
     private final Map<String, String> characteristics;
 
-    public Item(String title, String imageUrl, Long price, Map<String, String> characteristicsTemplate) {
+    public Item(String title, String imageUrl, String price, Map<String, String> characteristics) {
         this.title = title;
         this.imageUrl = imageUrl;
         this.price = price;
-        characteristics = new HashMap<>(characteristicsTemplate);
+        this.characteristics = characteristics;
     }
 
-    public void setCharacteristic(String characteristic, String value) {
-        characteristics.put(characteristic, value);
+    @Override
+    public String toString() {
+        return "Item{" +
+                "title='" + title + '\'' +
+                ", imageUrl='" + imageUrl + '\'' +
+                ", price='" + price + '\'' +
+                ", characteristics=" + characteristics +
+                '}';
     }
 }
