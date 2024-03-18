@@ -1,7 +1,8 @@
-package ru.theduke2021;
+package ru.theduke2021.saver;
 
 import com.fasterxml.jackson.dataformat.csv.CsvMapper;
 import com.fasterxml.jackson.dataformat.csv.CsvSchema;
+import ru.theduke2021.model.Item;
 
 import java.io.File;
 import java.io.IOException;

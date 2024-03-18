@@ -1,4 +1,4 @@
-package ru.theduke2021;
+package ru.theduke2021.model;
 
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 

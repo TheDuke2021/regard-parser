@@ -1,9 +1,12 @@
-package ru.theduke2021;
+package ru.theduke2021.component;
 
 import org.kohsuke.args4j.Argument;
 import org.kohsuke.args4j.CmdLineException;
 import org.kohsuke.args4j.CmdLineParser;
 import org.kohsuke.args4j.Option;
+import ru.theduke2021.model.Item;
+import ru.theduke2021.saver.CsvFileItemsSaver;
+import ru.theduke2021.saver.ItemsSaver;
 
 import java.io.IOException;
 import java.util.List;

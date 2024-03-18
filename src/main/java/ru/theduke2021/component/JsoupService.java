@@ -1,4 +1,4 @@
-package ru.theduke2021;
+package ru.theduke2021.component;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

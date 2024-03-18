@@ -1,8 +1,9 @@
-package ru.theduke2021;
+package ru.theduke2021.component;
 
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import ru.theduke2021.model.Item;
 
 import java.io.IOException;
 import java.net.URLEncoder;

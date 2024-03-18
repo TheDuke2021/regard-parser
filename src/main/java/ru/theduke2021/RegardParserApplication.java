@@ -1,6 +1,7 @@
 package ru.theduke2021;
 
 import org.jsoup.HttpStatusException;
+import ru.theduke2021.component.CommandLineRunner;
 
 public class RegardParserApplication {
 
