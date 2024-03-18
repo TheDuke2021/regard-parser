@@ -1,24 +1,12 @@
 package ru.theduke2021;
 
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 /**
  * Товар из маркетплейса.
  */
-public class Item {
-
-    private final String id;
-    private final String title;
-    private final String description;
-    private final String imageUrl;
-    private final String price;
-
-
-    public Item(String id, String title, String description, String imageUrl, String price) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.imageUrl = imageUrl;
-        this.price = price;
-    }
+@JsonPropertyOrder({"id", "title", "description", "imageUrl", "price"})
+public record Item(String id, String title, String description, String imageUrl, String price) {
 
     @Override
     public String toString() {
