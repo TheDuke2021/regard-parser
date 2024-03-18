@@ -44,6 +44,14 @@ public class RegardParser {
         return new Item(id, title, description, imageUrl, price);
     }
 
+    /**
+     * Парсит и возвращает список товаров по заданному запросу {@code query}. Если на маркетплейсе товаров меньше,
+     * чем {@code count} - вернёт столько товаров, сколько удалось найти.
+     * @param query запрос (название товара), по которому нужно парсить
+     * @param count количество товаров, которые нужно спарсить
+     * @return Список со спарсенными товарами по запросу {@code query}.
+     * @throws IOException
+     */
     public List<Item> parseItems(String query, int count) throws IOException {
         query = URLEncoder.encode(query, StandardCharsets.UTF_8);
 

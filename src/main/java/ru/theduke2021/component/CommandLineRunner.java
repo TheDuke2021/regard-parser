@@ -11,6 +11,9 @@ import ru.theduke2021.saver.ItemsSaver;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Класс, отвечающий за обработку передаваемых в коносоли аргументов и запуск парсинга.
+ */
 public class CommandLineRunner {
 
 
