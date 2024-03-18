@@ -7,15 +7,5 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
  */
 @JsonPropertyOrder({"id", "title", "description", "imageUrl", "price"})
 public record Item(String id, String title, String description, String imageUrl, String price) {
-
-    @Override
-    public String toString() {
-        return "Item{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", description='" + description + '\'' +
-                ", imageUrl='" + imageUrl + '\'' +
-                ", price='" + price + '\'' +
-                '}';
-    }
+    
 }
